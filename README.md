@@ -9,7 +9,7 @@ Persistent action can set theme temporary.
 
 ## Screenshot
 
-![helm-themes-screenshot](https://github.com/syohex/emacs-helm-theme/raw/master/image/helm-theme-screenshot.png)
+![helm-themes-screenshot](https://github.com/syohex/emacs-helm-themes/raw/master/image/helm-themes-screenshot.png)
 
 
 Requirements
