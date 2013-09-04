@@ -31,8 +31,7 @@
 (require 'helm-config)
 
 (defun helm-c-themes-delete-theme ()
-  (mapc (lambda (th)
-          (disable-theme th)) custom-enabled-themes))
+  (mapc 'disable-theme custom-enabled-themes))
 
 (defun helm-c-themes-load-theme (theme-str)
   (helm-c-themes-delete-theme)
@@ -40,25 +39,25 @@
 
 (defvar helm-themes-source
   '((name . "Selection Theme")
-    (candidates . (lambda ()
-                    (custom-available-themes)))
+    (candidates . custom-available-themes)
     (action . helm-c-themes-load-theme)
     (persistent-action . helm-c-themes-load-theme)))
 
+;;;###autoload
 (defun helm-themes ()
   "Theme selection with helm interface"
   (interactive)
   (let ((changed nil)
-        (orig-theme (if custom-enabled-themes
-                        (car custom-enabled-themes))))
+        (orig-theme (when custom-enabled-themes
+                      (car custom-enabled-themes))))
     (unwind-protect
         (progn
           (when (helm :sources helm-themes-source :buffer "*helm-themes*")
             (setq changed t)))
       (when (not changed)
         (helm-c-themes-delete-theme)
-        (if orig-theme
-            (load-theme orig-theme t))))))
+        (when orig-theme
+          (load-theme orig-theme t))))))
 
 (provide 'helm-themes)
 
