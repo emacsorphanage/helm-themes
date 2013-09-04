@@ -53,9 +53,9 @@
                         (car custom-enabled-themes))))
     (unwind-protect
         (progn
-          (helm :sources helm-themes-source :buffer "*helm-themes*")
-          (setq changed t))
-      (when changed
+          (when (helm :sources helm-themes-source :buffer "*helm-themes*")
+            (setq changed t)))
+      (when (not changed)
         (helm-c-themes-delete-theme)
         (if orig-theme
             (load-theme orig-theme t))))))
