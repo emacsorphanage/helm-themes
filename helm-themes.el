@@ -1,4 +1,4 @@
-;;; helm-themes.el --- Color theme selection with helm interface
+;;; helm-themes.el --- Color theme selection with helm interface -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2013 by Syohei YOSHIDA
 
