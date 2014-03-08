@@ -1,5 +1,8 @@
 Revision history for helm-themes.el
 
+Revision 0.03  2014/03/08 syohex
+    Enable lexical binding
+
 Revision 0.02  2013/09/04 syohex
     Fix reset problem(Thanks s-matsumoto)
 
