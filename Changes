@@ -1,5 +1,8 @@
 Revision history for helm-themes.el
 
+Revision 0.04  2014/09/09 syohex
+    Modernize
+
 Revision 0.03  2014/03/08 syohex
     Enable lexical binding
 
