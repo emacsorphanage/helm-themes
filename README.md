@@ -1,4 +1,4 @@
-# helm-themes.el
+# helm-themes.el [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
 
 
 ## Introduction
@@ -39,3 +39,8 @@ M-x helm-themes
 (require 'helm-config)
 (require 'helm-themes)
 ```
+
+[melpa-link]: http://melpa.org/#/helm-themes
+[melpa-stable-link]: http://melpa.org/#/helm-themes
+[melpa-badge]: http://melpa.org/packages/helm-themes-badge.svg
+[melpa-stable-badge]: http://stable.melpa.org/packages/helm-themes-badge.svg
