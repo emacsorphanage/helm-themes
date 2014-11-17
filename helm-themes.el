@@ -35,11 +35,16 @@
 
 (defun helm-themes--load-theme (theme-str)
   (helm-themes--delete-theme)
-  (load-theme (intern theme-str) t))
+  (if (string= theme-str "default")
+      t
+    (load-theme (intern theme-str) t)))
+
+(defun helm-themes--candidates ()
+  (cons 'default (custom-available-themes)))
 
 (defvar helm-themes-source
   '((name . "Selection Theme")
-    (candidates . custom-available-themes)
+    (candidates . helm-themes--candidates)
     (action . helm-themes--load-theme)
     (persistent-action . helm-themes--load-theme)))
 
