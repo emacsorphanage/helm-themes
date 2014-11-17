@@ -30,7 +30,8 @@
 
 (require 'helm-config)
 
-(defun helm-themes--delete-theme ()
+;; Loading mutiple themes makes Emacs too slow
+(defsubst helm-themes--delete-theme ()
   (mapc 'disable-theme custom-enabled-themes))
 
 (defun helm-themes--load-theme (theme-str)
