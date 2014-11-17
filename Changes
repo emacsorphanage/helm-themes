@@ -1,13 +1,16 @@
 Revision history for helm-themes.el
 
-Revision 0.04  2014/09/09 syohex
-    Modernize
+Revision 0.05 2014/11/18 syohex
+    - Add 'default' theme
 
-Revision 0.03  2014/03/08 syohex
-    Enable lexical binding
+Revision 0.04 2014/09/09 syohex
+    - Modernize
 
-Revision 0.02  2013/09/04 syohex
-    Fix reset problem(Thanks s-matsumoto)
+Revision 0.03 2014/03/08 syohex
+    - Enable lexical binding
 
-Revision 0.01  2012/10/20 syohex
-    Initial version
+Revision 0.02 2013/09/04 syohex
+    - Fix reset problem(Thanks s-matsumoto)
+
+Revision 0.01 2012/10/20 syohex
+    - Initial version
