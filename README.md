@@ -9,7 +9,7 @@ Persistent action can set theme temporary.
 
 ## Screenshot
 
-![helm-themes-screenshot](https://github.com/syohex/emacs-helm-themes/raw/master/image/helm-themes-screenshot.png)
+![helm-themes-screenshot](image/helm-themes-screenshot.png)
 
 
 Requirements
@@ -29,9 +29,13 @@ setting for some faces.
 
 Set themes with helm interface. This persistent action can set theme temporary.
 
-    M-x helm-themes
+```
+M-x helm-themes
+```
 
 ## Sample Configuration
 
-    (require 'helm-config)
-    (require 'helm-themes)
+```lisp
+(require 'helm-config)
+(require 'helm-themes)
+```
