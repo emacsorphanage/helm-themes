@@ -1,6 +1,5 @@
 # helm-themes.el [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
 
-
 ## Introduction
 
 `helm-themes.el` provides Emacs themes selection with helm interface.
@@ -12,8 +11,7 @@ Persistent action can set theme temporary.
 ![helm-themes-screenshot](image/helm-themes-screenshot.png)
 
 
-Requirements
-------------
+## Requirements
 * Emacs 24.1 or higher.
 * helm 1.0 or higher
 
