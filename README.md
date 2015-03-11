@@ -39,6 +39,6 @@ M-x helm-themes
 ```
 
 [melpa-link]: http://melpa.org/#/helm-themes
-[melpa-stable-link]: http://melpa.org/#/helm-themes
+[melpa-stable-link]: http://stable.melpa.org/#/helm-themes
 [melpa-badge]: http://melpa.org/packages/helm-themes-badge.svg
 [melpa-stable-badge]: http://stable.melpa.org/packages/helm-themes-badge.svg
