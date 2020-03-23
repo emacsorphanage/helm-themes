@@ -57,9 +57,14 @@
         (orig-theme (when custom-enabled-themes
                       (car custom-enabled-themes))))
     (unwind-protect
-        (progn
-          (when (helm :sources helm-themes-source :buffer "*helm-themes*")
-            (setq changed t)))
+        (when (helm :prompt (format "pattern (current theme: %s): "
+                                    (if (null custom-enabled-themes)
+                                        'default
+                                      (symbol-name orig-theme)))
+                    :preselect (format "%s$" (symbol-name orig-theme))
+                    :sources helm-themes-source
+                    :buffer "*helm-themes*")
+          (setq changed t))
       (when (not changed)
         (helm-themes--delete-theme)
         (when orig-theme
