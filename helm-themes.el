@@ -32,26 +32,30 @@
 
 ;; Loading mutiple themes makes Emacs too slow
 (defsubst helm-themes--delete-theme ()
+  "Delete theme."
   (mapc 'disable-theme custom-enabled-themes))
 
 (defun helm-themes--load-theme (theme-str)
+  "Load the theme by THEME-STR."
   (helm-themes--delete-theme)
   (if (string= theme-str "default")
       t
     (load-theme (intern theme-str) t)))
 
 (defun helm-themes--candidates ()
+  "Return a list of themes."
   (cons 'default (custom-available-themes)))
 
 (defvar helm-themes-source
   (helm-build-sync-source "Selection Theme"
-    :candidates 'helm-themes--candidates
-    :action 'helm-themes--load-theme
-    :persistent-action 'helm-themes--load-theme))
+                          :candidates 'helm-themes--candidates
+                          :action 'helm-themes--load-theme
+                          :persistent-action 'helm-themes--load-theme)
+  "Helm source for themes selection.")
 
 ;;;###autoload
 (defun helm-themes ()
-  "Theme selection with helm interface"
+  "Theme selection with helm interface."
   (interactive)
   (let ((changed nil)
         (orig-theme (when custom-enabled-themes
