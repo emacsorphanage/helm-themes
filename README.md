@@ -1,4 +1,9 @@
-# helm-themes.el [![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
+[![melpa badge][melpa-badge]][melpa-link]
+[![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
+
+# helm-themes.el
+
+[![CI](https://github.com/emacsorphanage/helm-themes/actions/workflows/test.yml/badge.svg)](https://github.com/emacsorphanage/helm-themes/actions/workflows/test.yml)
 
 ## Introduction
 
@@ -10,18 +15,16 @@ You can set theme temporary by persistent action.
 
 ![helm-themes-screenshot](image/helm-themes-screenshot.png)
 
-
 ## Requirements
-* Emacs 24.3 or higher.
-* helm 1.7.7 or higher
 
+* Emacs 24.3 or higher
+* helm 1.7.7 or higher
 
 ## Caution
 
 `helm-themes.el` reset to original theme if you cancel to set theme(Such as `C-g`).
 But `helm-themes.el` cannot reset original theme if you set your own color
 setting for some faces.
-
 
 ## Basic Usage
 
