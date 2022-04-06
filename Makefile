@@ -3,7 +3,7 @@ SHELL := /usr/bin/env bash
 EMACS ?= emacs
 EASK ?= eask
 
-TEST-FILES := $(shell ls test/lsp-ltex-*.el)
+TEST-FILES := $(shell ls test/helm-themes-*.el)
 
 .PHONY: clean checkdoc lint package install compile test
 
