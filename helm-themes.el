@@ -5,7 +5,7 @@
 ;; Author: Syohei YOSHIDA <syohex@gmail.com>
 ;; URL: https://github.com/syohex/emacs-helm-themes
 ;; Version: 0.05
-;; Package-Requires: ((helm-core "2.0") (emacs "24.4"))
+;; Package-Requires: ((helm-core "3.6.0") (emacs "24.4"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@
 
 ;;; Code:
 
-(require 'helm)
+(require 'helm-core)
 
 ;; Loading mutiple themes makes Emacs too slow
 (defsubst helm-themes--delete-theme ()
