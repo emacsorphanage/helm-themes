@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "helm-themes"
          "0.05"
          "Color theme selection with helm interface")
